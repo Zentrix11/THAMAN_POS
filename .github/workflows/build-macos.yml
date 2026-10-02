@@ -1,0 +1,50 @@
+﻿name: Build macOS
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Flutter version
+        run: flutter --version
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Generate macOS icons
+        run: dart run flutter_launcher_icons -f flutter_launcher_icons_macos.yaml
+
+      - name: Patch platform files
+        run: dart run tool/patch_platforms.dart
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
+
+      - name: Build macOS
+        run: |
+          flutter build macos --release \
+            --dart-define=THAMAN_SUPABASE_URL=https://bbmeefjtzszysgttryie.supabase.co \
+            --dart-define=THAMAN_SUPABASE_PUBLISHABLE_KEY=sb_publishable_oqYfMj4kN4D2IN_3rIKQow_9sH9FUt6
+
+      - name: Upload macOS build
+        uses: actions/upload-artifact@v4
+        with:
+          name: thaman-pos-macos
+          path: build/macos/Build/Products/Release/
