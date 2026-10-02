@@ -1,0 +1,15 @@
+PASS - version bumped
+PASS - owner first-run asks name
+PASS - owner provisioning stores supplied name
+PASS - management credentials require displayName
+PASS - manager/accountant name UI field exists
+PASS - name passed from UI to data layer
+PASS - new account stores entered name
+PASS - existing account updates entered name
+PASS - auth returns account real name
+PASS - dashboard greeting uses currentUserName
+PASS - dashboard fallback is role-aware
+PASS - test covers personalized manager name
+
+Result: 12/12 checks passed.
+Note: Static source validation only; Flutter SDK is not installed in the build environment, so compile/runtime validation must be run locally.

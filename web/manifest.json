@@ -1,0 +1,11 @@
+{
+  "name": "THAMAN POS",
+  "short_name": "THAMAN",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F4F7F5",
+  "theme_color": "#0F4B43",
+  "description": "THAMAN POS - modern retail point of sale and management",
+  "orientation": "any",
+  "prefer_related_applications": false
+}

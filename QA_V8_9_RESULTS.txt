@@ -1,0 +1,22 @@
+THAMAN POS V8.9 QA RESULTS
+
+Static/source integrity: 896/896 PASS
+V8.9 release/printing/preview checks: 154/154 PASS
+Platforms present: Windows / Android / iOS / macOS / Web
+Flutter SDK in this build environment: NOT INSTALLED
+
+Verified in source QA:
+- Central print-preview routing
+- Native preview before OS print dialog
+- Web exact HTML preview before browser print
+- Premium invoice layout on native PDF, Arabic raster PDF, and Web HTML
+- Wide-table handling and row normalization
+- Sales invoice customer/account/phone context
+- Sales invoice current balance after later payments/returns
+- Purchase invoice supplier/account/phone context
+- Purchase current outstanding balance
+- Grand-total visual highlighting
+- Optional logo failure remains non-fatal
+- Arabic native printing remains offline-safe
+
+Real-device compile/print testing must still be run on a machine that has Flutter and the target printers/devices.

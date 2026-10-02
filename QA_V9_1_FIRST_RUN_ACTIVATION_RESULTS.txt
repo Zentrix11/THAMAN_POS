@@ -1,0 +1,54 @@
+PASS | POS version 0.28.0+32
+PASS | StartupGate is app home
+PASS | Fresh store no production default-account seeding
+PASS | First run activation step exists
+PASS | Owner name/email/password-confirm/PIN setup exists
+PASS | Owner account provisioned after activation only
+PASS | Owner account required before access
+PASS | Device activation RPC wired
+PASS | Heartbeat RPC wired
+PASS | Offline bypass limited to 3 days
+PASS | Install identity persisted
+PASS | POS build requires Supabase defines
+PASS | POS SQL activation function
+PASS | POS SQL heartbeat function
+PASS | Blocked device server enforcement
+PASS | Blocked devices reserve slots
+PASS | Cross-subscriber installation guard
+PASS | Admin version 1.4.0+6
+PASS | Device blocked model fields
+PASS | Admin interface deleteBusiness
+PASS | Supabase repository deleteBusiness
+PASS | Demo repository deleteBusiness
+PASS | Admin interface deleteSubscription
+PASS | Supabase repository deleteSubscription
+PASS | Demo repository deleteSubscription
+PASS | Admin interface deletePayment
+PASS | Supabase repository deletePayment
+PASS | Demo repository deletePayment
+PASS | Admin interface setDeviceBlocked
+PASS | Supabase repository setDeviceBlocked
+PASS | Demo repository setDeviceBlocked
+PASS | Admin interface deleteDevice
+PASS | Supabase repository deleteDevice
+PASS | Demo repository deleteDevice
+PASS | Admin interface deletePlan
+PASS | Supabase repository deletePlan
+PASS | Demo repository deletePlan
+PASS | Admin UI device block/unblock
+PASS | Admin UI subscriber delete
+PASS | Admin UI subscription delete
+PASS | Admin UI device delete
+PASS | Admin UI payment delete
+PASS | Admin UI unused-plan delete
+PASS | Stronger 12-char activation code groups
+PASS | SQL RPC admin_set_device_blocked
+PASS | SQL RPC admin_delete_device
+PASS | SQL RPC admin_delete_subscription
+PASS | SQL RPC admin_delete_payment
+PASS | SQL RPC admin_delete_plan
+PASS | SQL RPC admin_delete_business
+PASS | Admin RPCs owner-authorized
+PASS | Activity audit intentionally retained
+
+RESULT: 52/52 PASS

@@ -1,0 +1,26 @@
+THAMAN POS V9.3.1 static integration checks
+================================================
+01. PASS - Version 0.30.1+37
+02. PASS - Repository version 0.30.1
+03. PASS - Second device checks cloud owner
+04. PASS - Owner profile created in cloud once
+05. PASS - Owner cloud login email/password
+06. PASS - Owner login does not require PIN
+07. PASS - Forgot password opens support
+08. PASS - Support email is correct
+09. PASS - No automatic reset-email call
+10. PASS - Reusable sign-out confirmation exists
+11. PASS - Management sign-out confirmed
+12. PASS - POS sign-out confirmed
+13. PASS - Staff sign-out confirmed
+14. PASS - Owner phone persisted in local model
+15. PASS - Owner cloud cache support merged
+16. PASS - V9.2.2 free-form SKU preserved
+17. PASS - Free-form SKU UI preserved
+18. PASS - Migration 007 included
+19. PASS - Gradle 9.3.1 retained
+20. PASS - NDK 28.2 retained
+21. PASS - ProGuard file included
+Result: 21/21 PASS
+
+Note: Flutter SDK is not installed in this execution environment, so compile/runtime tests were not run here.

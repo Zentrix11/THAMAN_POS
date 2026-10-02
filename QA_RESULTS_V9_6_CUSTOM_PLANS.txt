@@ -1,0 +1,39 @@
+THAMAN POS V9.6 QA results
+UTC: 2026-09-10 11:47:27
+
+THAMAN static QA: 1092/1092 checks passed
+RESULT: PASS (static/source integrity checks)
+
+PASS | version_0_33_0_41
+PASS | app_version_0_33_0
+PASS | catalog_model_custom_fields
+PASS | catalog_rpc
+PASS | catalog_loaded_in_ui
+PASS | current_plan_badge
+PASS | published_plans_text
+PASS | plan_request_action
+PASS | custom_request_form
+PASS | custom_request_contact
+PASS | custom_request_rpc
+PASS | custom_request_proof
+PASS | request_persist_then_email
+PASS | edge_function_exists
+PASS | edge_recipient
+PASS | edge_resend
+PASS | edge_device_proof
+PASS | edge_html_escape
+PASS | service_role_not_in_flutter
+PASS | sql_custom_private_catalog
+PASS | sql_custom_request
+PASS | sql_request_size_guard
+PASS | sql_device_subscription_binding
+PASS | sql_cross_tenant_guard
+PASS | sql_legacy_plan_request_stays_private
+PASS | verify_after_010
+PASS | remote_enforcement_preserved
+PASS | supplier_add_preserved
+
+THAMAN POS V9.6 CUSTOM PLANS QA: 28/28 PASS
+
+TypeScript Edge Function syntax/type smoke-check: PASS (tsc with local Deno/Supabase shims).
+NOTE: Flutter SDK is not installed in this build environment, so flutter analyze/test/build were not executed here.

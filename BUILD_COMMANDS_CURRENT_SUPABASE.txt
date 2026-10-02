@@ -1,0 +1,29 @@
+THAMAN POS V9.4 / pubspec 0.31.0+38
+Supabase project already wired into the commands below.
+
+WINDOWS RELEASE:
+flutter clean
+flutter pub get
+flutter build windows --release --dart-define=THAMAN_SUPABASE_URL=https://bbmeefjtzszysgttryie.supabase.co --dart-define=THAMAN_SUPABASE_PUBLISHABLE_KEY=sb_publishable_oqYfMj4kN4D2IN_3rIKQow_9sH9FUt6
+
+Windows output:
+build\windows\x64\runner\Release\thaman_pos.exe
+IMPORTANT: distribute the whole Release folder because the EXE depends on DLL/data files beside it.
+
+ANDROID PRODUCTION APK (requires android\key.properties + your private keystore):
+flutter clean
+flutter pub get
+flutter build apk --release --dart-define=THAMAN_SUPABASE_URL=https://bbmeefjtzszysgttryie.supabase.co --dart-define=THAMAN_SUPABASE_PUBLISHABLE_KEY=sb_publishable_oqYfMj4kN4D2IN_3rIKQow_9sH9FUt6
+
+Android output:
+build\app\outputs\flutter-apk\app-release.apk
+
+ANDROID TEST APK (does not require production keystore):
+flutter clean
+flutter pub get
+flutter build apk --debug --dart-define=THAMAN_SUPABASE_URL=https://bbmeefjtzszysgttryie.supabase.co --dart-define=THAMAN_SUPABASE_PUBLISHABLE_KEY=sb_publishable_oqYfMj4kN4D2IN_3rIKQow_9sH9FUt6
+
+Test APK output:
+build\app\outputs\flutter-apk\app-debug.apk
+
+Never put a Supabase secret/service_role key in Flutter.

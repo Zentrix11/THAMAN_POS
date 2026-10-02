@@ -1,0 +1,61 @@
+name: thaman_pos
+publish_to: 'none'
+description: THAMAN POS - responsive bilingual point of sale and management system.
+version: 0.38.1+40
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^11.0.0
+  crypto: ^3.0.7
+  hive_ce: ^2.19.3
+  hive_ce_flutter: ^2.3.4
+  supabase_flutter: ^2.17.2
+  flutter_local_notifications: 19.5.0
+  timezone: ^0.10.1
+  pdf: 3.12.0
+  printing: 5.14.3
+  web: 1.1.1
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/app_icon.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: assets/app_icon.png
+    background_color: '#FFFFFF'
+    theme_color: '#0F4B43'
+  windows:
+    generate: true
+    image_path: assets/app_icon.png
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: assets/app_icon.png
+
+flutter:
+  config:
+    enable-swift-package-manager: false
+  uses-material-design: true
+  assets:
+    - assets/thaman-logo.png
+    - assets/thaman-mark.png
+    - assets/app_icon.png
+    - assets/zentrix_logo.png
+    - assets/omar_nidal_albahtiti.png

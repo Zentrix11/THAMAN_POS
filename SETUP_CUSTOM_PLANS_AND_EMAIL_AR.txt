@@ -1,0 +1,21 @@
+THAMAN V1.9 / V9.6 - إعداد الباقات المخصصة والبريد
+
+1) قاعدة البيانات
+- يجب أن تكون migrations 001 إلى 009 مطبقة أولًا.
+- بعدها نفّذ: 010_custom_plans_device_subscription_and_email_requests.sql
+- ثم نفّذ: VERIFY_AFTER_010.sql
+- يجب أن تكون كل نتائج عمود passed = true.
+
+2) إرسال طلب الباقة المخصصة إلى البريد
+الطلب يُحفظ في Supabase حتى لو تعطل البريد. لإرسال نسخة تلقائية إلى:
+albhtytymr6@gmail.com
+استخدم Supabase Edge Function المرفقة: custom-plan-request-email
+
+المتطلبات: حساب Resend + API Key + عنوان From مسموح/دومين موثق لدى Resend.
+أوامر Supabase CLI:
+supabase secrets set RESEND_API_KEY=YOUR_RESEND_KEY
+supabase secrets set CUSTOM_PLAN_NOTIFY_EMAIL=albhtytymr6@gmail.com
+supabase secrets set CUSTOM_PLAN_FROM_EMAIL="THAMAN <you@your-verified-domain.com>"
+supabase functions deploy custom-plan-request-email --no-verify-jwt
+
+مهم: لا تضع RESEND_API_KEY أو SUPABASE_SERVICE_ROLE_KEY داخل Flutter.

@@ -1,0 +1,20 @@
+THAMAN POS V9.5 FINAL QA
+========================
+Executed in delivery environment:
+- tools/qa_static_check.py: 1090/1090 PASS
+- tools/qa_v9_5_final.py: 73/73 PASS
+- Bash build/run scripts syntax: PASS
+
+Added Flutter unit/regression tests:
+- legacy SharedPreferences bool/number migration
+- offline lease / clock rollback / future clock / expiry
+- cloud state conflict merge
+- local credential hashing
+- supplier creation permissions/duplicate/opening balance
+
+NOT executed in delivery environment:
+- flutter analyze
+- flutter test
+- native Windows/Android/iOS/macOS/Web build
+Reason: Flutter SDK is not installed in the delivery container.
+Run RUN_FINAL_QA.bat on the development PC; production build scripts also run analyze/test before release build.

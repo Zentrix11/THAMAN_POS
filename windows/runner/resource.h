@@ -1,0 +1,4 @@
+#define IDI_APP_ICON 101
+#define IDI_SMALL 102
+#define IDC_RUNNER 109
+#define IDR_MAINFRAME 128

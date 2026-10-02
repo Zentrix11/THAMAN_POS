@@ -1,0 +1,156 @@
+[PASS] platform:windows
+[PASS] platform:android
+[PASS] platform:ios
+[PASS] platform:macos
+[PASS] platform:web
+[PASS] version:0.26.0+30
+[PASS] production storage key
+[PASS] no demo seeder
+[PASS] clean first-run bootstrap
+[PASS] business reset exists
+[PASS] business reset preserves management accounts
+[PASS] neutral store name default
+[PASS] neutral branch default
+[PASS] neutral receipt footer default
+[PASS] admin login not prefilled
+[PASS] staff login not prefilled
+[PASS] no demo credentials admin UI
+[PASS] no demo credentials staff UI
+[PASS] production reset UI
+[PASS] business reset owner only
+[PASS] owner credentials editable
+[PASS] admin credential updates owner-authorized
+[PASS] no runtime demo identifiers
+[PASS] staff session has no fake-id fallback
+[PASS] attendance readable lateness formatter
+[PASS] attendance UI uses readable lateness
+[PASS] attendance print uses readable lateness
+[PASS] unified stock entry action visible
+[PASS] inventory staff no duplicate receive/purchase cards
+[PASS] barcode station uses unified stock entry
+[PASS] inventory purchase supports full new-product details
+[PASS] inventory purchase duplicate SKU protection
+[PASS] inventory product creation role restricted
+[PASS] inventory purchase regression tests
+[PASS] central navigator key wired
+[PASS] all native printing goes through preview
+[PASS] web exact preview path retained
+[PASS] native preview enabled before system print
+[PASS] preview has explicit continue print action
+[PASS] preview supports wide tables
+[PASS] preview normalizes malformed rows
+[PASS] preview caps huge reports safely
+[PASS] sale invoice includes live balance
+[PASS] sale invoice has customer account context
+[PASS] purchase invoice includes current due
+[PASS] invoice currency included in price headers
+[PASS] native PDF highlights grand total
+[PASS] native PDF first item column wider
+[PASS] arabic raster first item column wider
+[PASS] arabic raster highlights grand total
+[PASS] web premium grand total styling
+[PASS] web print colors preserved
+[PASS] web table headers repeat in print
+[PASS] native print catches failures
+[PASS] arabic native offline raster
+[PASS] no runtime Google font dependency
+[PASS] native logo optional
+[PASS] web popup opened synchronously
+[PASS] web logo optional
+[PASS] web rows normalized
+[PASS] web HTML escaped
+[PASS] print text sanitized
+[PASS] return notice missing invoice safe
+[PASS] inventory employee safe print copy exists
+[PASS] management stock-count report exists
+[PASS] assets print exists
+[PASS] accounting print exists
+[PASS] customer print exists
+[PASS] supplier print exists
+[PASS] sale print exists
+[PASS] purchase print exists
+[PASS] return print exists
+[PASS] movement print exists
+[PASS] print entitlement:macos/Runner/Release.entitlements
+[PASS] print entitlement:macos/Runner/DebugProfile.entitlements
+[PASS] quality analyze:RUN_WINDOWS.bat
+[PASS] quality test:RUN_WINDOWS.bat
+[PASS] quality analyze:RUN_ANDROID.bat
+[PASS] quality test:RUN_ANDROID.bat
+[PASS] quality analyze:RUN_WEB.bat
+[PASS] quality test:RUN_WEB.bat
+[PASS] release analyze:BUILD_WINDOWS_RELEASE.bat
+[PASS] release test:BUILD_WINDOWS_RELEASE.bat
+[PASS] release analyze:BUILD_ANDROID_RELEASE.bat
+[PASS] release test:BUILD_ANDROID_RELEASE.bat
+[PASS] release analyze:BUILD_WEB_RELEASE.bat
+[PASS] release test:BUILD_WEB_RELEASE.bat
+[PASS] release analyze:BUILD_IOS_RELEASE.sh
+[PASS] release test:BUILD_IOS_RELEASE.sh
+[PASS] release analyze:BUILD_MACOS_RELEASE.sh
+[PASS] release test:BUILD_MACOS_RELEASE.sh
+[PASS] windows native device fixed
+[PASS] web explicit chrome
+[PASS] ios build script present
+[PASS] macos build script present
+[PASS] production empty-data test
+[PASS] print structure test
+[PASS] missing invoice print regression test
+[PASS] financial reset trim test
+[PASS] delimiters:lib/main.dart
+[PASS] delimiters:lib/core/app_strings.dart
+[PASS] delimiters:lib/core/app_controller.dart
+[PASS] delimiters:lib/core/permissions.dart
+[PASS] delimiters:lib/core/auth_service.dart
+[PASS] delimiters:lib/app/app_scroll_behavior.dart
+[PASS] delimiters:lib/app/thaman_app.dart
+[PASS] delimiters:lib/app/app_theme.dart
+[PASS] delimiters:lib/data/app_data_store.dart
+[PASS] delimiters:lib/data/models.dart
+[PASS] delimiters:lib/features/auth/access_screen.dart
+[PASS] delimiters:lib/features/auth/staff_login_screen.dart
+[PASS] delimiters:lib/features/auth/admin_login_screen.dart
+[PASS] delimiters:lib/features/inventory/inventory_batch_dialog.dart
+[PASS] delimiters:lib/features/inventory/stock_count_start_dialog.dart
+[PASS] delimiters:lib/features/inventory/barcode_station_screen.dart
+[PASS] delimiters:lib/features/pos/pos_screen.dart
+[PASS] delimiters:lib/features/management/section_page.dart
+[PASS] delimiters:lib/features/management/owner_dashboard.dart
+[PASS] delimiters:lib/features/management/management_shell.dart
+[PASS] delimiters:lib/features/staff/staff_home.dart
+[PASS] delimiters:lib/features/staff/stock_count_screen.dart
+[PASS] delimiters:lib/features/management/widgets/management_widgets.dart
+[PASS] delimiters:lib/features/management/sections/products_section.dart
+[PASS] delimiters:lib/features/management/sections/communications_section.dart
+[PASS] delimiters:lib/features/management/sections/employees_section.dart
+[PASS] delimiters:lib/features/management/sections/customers_suppliers_section.dart
+[PASS] delimiters:lib/features/management/sections/payroll_section.dart
+[PASS] delimiters:lib/features/management/sections/tasks_section.dart
+[PASS] delimiters:lib/features/management/sections/sales_section.dart
+[PASS] delimiters:lib/features/management/sections/attendance_section.dart
+[PASS] delimiters:lib/features/management/sections/financial_report_dialog.dart
+[PASS] delimiters:lib/features/management/sections/settings_section.dart
+[PASS] delimiters:lib/features/management/sections/kpi_details_section.dart
+[PASS] delimiters:lib/features/management/sections/financial_summary_section.dart
+[PASS] delimiters:lib/features/management/sections/accounting_assets_section.dart
+[PASS] delimiters:lib/features/management/sections/purchases_section.dart
+[PASS] delimiters:lib/features/management/sections/restock_requests_section.dart
+[PASS] delimiters:lib/features/management/sections/inventory_section.dart
+[PASS] delimiters:lib/features/management/sections/financial_reports_screen.dart
+[PASS] delimiters:lib/features/management/sections/reports_section.dart
+[PASS] delimiters:lib/core/widgets/brand_pattern.dart
+[PASS] delimiters:lib/core/widgets/surface_card.dart
+[PASS] delimiters:lib/core/widgets/app_logo.dart
+[PASS] delimiters:lib/core/widgets/section_header.dart
+[PASS] delimiters:lib/core/widgets/language_switch.dart
+[PASS] delimiters:lib/core/printing/print_service_stub.dart
+[PASS] delimiters:lib/core/printing/print_service_native.dart
+[PASS] delimiters:lib/core/printing/print_document.dart
+[PASS] delimiters:lib/core/printing/print_preview_dialog.dart
+[PASS] delimiters:lib/core/printing/print_service_web.dart
+[PASS] delimiters:lib/core/printing/print_templates.dart
+[PASS] delimiters:lib/core/printing/print_service.dart
+[PASS] delimiters:lib/core/navigation/app_navigator.dart
+[PASS] delimiters:test/app_data_store_test.dart
+
+THAMAN V8.9 RELEASE QA: 154/154 PASS

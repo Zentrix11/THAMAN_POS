@@ -1,0 +1,22 @@
+THAMAN POS V9.2.2 - Static QA
+
+PASS - Version is 0.29.2+36
+PASS - Subscription heartbeat reports 0.29.2
+PASS - SKU helper supports case-insensitive uniqueness
+PASS - Managed product stores trimmed SKU without uppercasing
+PASS - Managed product edit uses free-form SKU
+PASS - Manual product accepts chosen SKU
+PASS - Product editor explains free-form SKU
+PASS - Purchase manual item has SKU field
+PASS - Inventory manual item passes chosen SKU
+PASS - Stock count manual item asks for SKU
+PASS - Tests cover preserved mixed SKU
+PASS - Gradle wrapper is 9.3.1
+PASS - Kotlin Android plugin enabled
+PASS - Android NDK pinned to required version
+PASS - ProGuard config exists
+PASS - Kotlin incremental cross-drive workaround present
+
+Result: 16/16 PASS
+
+Note: Flutter SDK is not installed in this build environment, so compile/runtime tests were not executed here.

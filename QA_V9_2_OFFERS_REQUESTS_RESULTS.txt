@@ -1,0 +1,18 @@
+THAMAN POS V9.2 — Offers / plans / subscription requests static validation
+Version: 0.29.0+34
+
+PASS | Offers & plans navigation entry
+PASS | Owner/Manager/Accountant catalog visibility
+PASS | Owner-only request submission
+PASS | Live plan catalog RPC: pos_available_plans
+PASS | Renewal request for current plan
+PASS | Plan-change request for another plan
+PASS | Optional customer note
+PASS | Duplicate open request protection is server-side
+PASS | Request does not alter subscription automatically
+PASS | Device + activation binding validated server-side
+PASS | Migration 006 bundled
+PASS | No service_role key in Flutter client
+PASS | Dart delimiter/static structure scan
+
+NOTE: Legacy V9.0 QA script expects an older version string and is not the release gate for V9.2. Flutter SDK was not available in the packaging environment, so compile/runtime verification must be performed with `flutter build` on the target developer machine.

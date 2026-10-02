@@ -1,0 +1,16 @@
+THAMAN POS V9.1.1 — Static validation
+Version: 0.28.1+33
+
+PASS - Deleted/not-found subscription returns to activation screen
+PASS - Suspended/pending/expired subscription returns to activation screen
+PASS - Blocked/unlinked/deleted device returns to activation screen
+PASS - Stored invalid activation code is cleared after definitive online denial
+PASS - Existing owner credentials are preserved after license reset
+PASS - Re-activation with a valid code skips owner recreation when owner already exists
+PASS - Support email shown for license/activation administrative denials
+PASS - Support email: albhytytymr6@gmail.com
+PASS - Background server revalidation runs every 5 minutes while POS is open
+PASS - Offline grace remains limited by the existing 3-day validation window
+
+Static source checks: 10/10 PASS
+Note: Flutter SDK is not available in the assistant environment, so this package was not compiled here. Build it on your Flutter machine before distribution.

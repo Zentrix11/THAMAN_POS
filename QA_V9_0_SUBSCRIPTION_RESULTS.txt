@@ -1,0 +1,27 @@
+PASS | version:0.27.0+31
+PASS | supabase_dependency
+PASS | subscription_enum
+PASS | subscription_nav_ar
+PASS | subscription_icon
+PASS | manager_has_subscription
+PASS | accountant_has_subscription
+PASS | section_route
+PASS | permission_exists
+PASS | manager_permission
+PASS | accountant_permission
+PASS | owner_only_code_edit
+PASS | real_plan_fields
+PASS | expiry_warning_ui
+PASS | grace_warning_ui
+PASS | no_fake_subscription
+PASS | activation_persisted
+PASS | dart_define_url
+PASS | dart_define_key
+PASS | rpc_client
+PASS | sql_security_definer
+PASS | sql_anon_exec_only_function
+PASS | sql_no_table_grant
+PASS | sql_devices
+PASS | sql_effective_status
+
+RESULT: 25/25 PASS
